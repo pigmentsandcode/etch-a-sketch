@@ -1,3 +1,8 @@
+function handleMouseEnter(e) {
+  const targetEl = e.target;
+  targetEl.classList.add("add-color");
+}
+
 const squaresContainer = document.querySelector(".squares-container");
 const totalSquares = 144;
 const totalMargins = 2 * 13;
@@ -11,5 +16,6 @@ for (let i = 0; i < totalSquares; i++) {
   newSqEl.className = "square";
   newSqEl.style.width = `${truncSide}px`;
   newSqEl.style.height = `${truncSide}px`;
+  newSqEl.addEventListener("mouseenter", handleMouseEnter);
   squaresContainer.appendChild(newSqEl);
 }
