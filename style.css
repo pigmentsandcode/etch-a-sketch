@@ -1,8 +1,14 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 .squares-container {
     display: flex;
     width: 500px;
     height: 500px;
     flex-wrap: wrap;
+    align-self: center;
 }
 
 .square {
@@ -12,4 +18,19 @@
 
 .add-color {
     background-color: black;
+}
+
+h1 {
+    text-align: center;
+}
+
+.buttons-div {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+.size-prompt {
+    font-size: 16px;
+    padding: 5px 10px;
 }
